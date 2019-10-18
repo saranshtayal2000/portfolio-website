@@ -6,6 +6,7 @@
     position: absolute;
     top:50%;
     display: block;
+    width: 100%;
 /*    left: 45%;*/
 /*    z-index=-900px;*/
 }
