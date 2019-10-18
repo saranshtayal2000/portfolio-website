@@ -1,0 +1,20 @@
+.cursor{
+    height:40px;
+    width:40px;
+    border:1px solid white;
+    border-radius:50%;
+    position:absolute;
+    transition-duration:200ms;
+    transition-timing-function:ease-out;
+    
+}
+.inner{
+    
+    height:0;
+    width:0;
+    border:5px solid white;
+    border-radius:50%;
+    position:absolute;
+}
+
+ 

@@ -1,0 +1,122 @@
+<!doctype.html>
+<html>
+<head>
+<title>MY CSS WEBSITE</title> 
+    <link rel="stylesheet" href="csswebsite.css">
+    <link rel="stylesheet" href="pointer2.css">
+    <link rel="stylesheet" href="scrollbar.css">
+</head>
+    
+<body class="header" >
+    
+    <div class="cursor"></div>
+    <div class="inner"></div>
+    <div class="stop"></div>
+   
+    <div id="follower">
+  <div id="circle1"></div>
+  <div id="circle2"></div>
+</div>
+    
+       <div id="particles-js">
+    
+           <div id="text">hello</div>
+           <div class="light"></div>
+           
+ <nav class="sticky">
+     <ul class="navbar" id="dropdownClick">
+         <li><a href="#home">home</a></li>
+         <li><a href="#news">news</a></li>
+         <li><a href="#contact">contact</a></li>
+         <li><a href="#aboutus">about us</a></li>
+         
+         <li class="navbar-right"><a href="#signup">sign up</a></li>
+         <li class="navbar-right"><a href="#signin">sign in</a></li>
+         <li class="dropdownicon" onclick="dropdownMenu"><a href="javascript:void(0);">&#9776;
+</a></li>
+       
+         
+    
+     
+     
+     </ul>
+     </nav>
+           </div> 
+
+    
+    
+    
+    
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="pointer.js"></script>
+     
+    
+    
+    
+    <script>
+    const cursor=document.querySelector('.cursor');
+        document.addEventListener('mousemove',e =>{
+            cursor.setAttribute("style","top: "+(e.pageY-20)+"px; left: "+(e.pageX-15)+"px")
+            
+        })
+    
+         const inner=document.querySelector('.inner');
+        document.addEventListener('mousemove',e =>{
+            inner.setAttribute("style","top: "+(e.pageY)+"px; left: "+(e.pageX)+"px")
+            
+            
+        })
+    
+    
+    
+    
+    </script>
+<!--    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
+    
+<!--
+    <script>
+         var i=0;
+            var text = "Hey, I  am  anonymous  !";
+            var speed=80;
+    function typing()
+        {
+            
+          if(i<text.length){
+              document.getElementById("text").innerHTML = text.slice(0,i+1)+" |";
+              i++;
+              setTimeout(typing,speed);
+          }  
+    
+        }
+        </script>
+-->
+<!--
+   <script type="text/javascript">
+       $(document).mousemove(function(e){
+           var X = e.pageX;
+           var Y = e.pageY;
+           $('.light').css('background','radial-gradient(circle at '+X+ 'px '+Y+'px,transparent,#000 10%)');
+       })
+    </script>
+-->
+    
+    
+    
+    
+    
+    
+   <img src="logo.png">
+    
+    
+   
+    
+    
+</body>
+
+
+
+
+
+</html>
