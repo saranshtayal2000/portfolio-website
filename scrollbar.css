@@ -13,8 +13,7 @@
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #666;
-  border-radius: 10px;
 }
 /*hover*/
 ::-webkit-scrollbar-thumb:hover {
-  background: #fff; 
+  background: #888; 
