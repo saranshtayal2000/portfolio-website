@@ -15,9 +15,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!--    including bs4-->
+    <!------------------------------------>
 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="csswebsite.css">
+    <link rel="stylesheet" href="triple%20arrow.css">
     <link rel="stylesheet" href="pointer2.css">     <!-- To switch cursor styles, toggle between pointer.css and pointer2.css -->
     <link rel="stylesheet" href="scrollbar.css">
     
@@ -31,7 +34,7 @@
     <div class="cursor"></div>
     <div class="inner"></div>
     <div class="stop"></div>
-    <!-- necessary for pointer2.css-->
+    <!------------------------------------>
    
     
     <!-- necessary for pointer-->
@@ -39,11 +42,13 @@
       <div id="circle1"></div>
       <div id="circle2"></div>
     </div>
-    <!-- necessary for pointer-->
+    <!------------------------------------>
 
     
-    <div id="text"></div>
-           
+    
+<div class="first page">
+    
+       
     <div id="navbar">
         <a href="#" id="logo">Logo</a>
         <div id="navbar-right">
@@ -52,6 +57,27 @@
             <a href="about">ABOUT</a>
         </div>
     </div>    
+    
+      <div id="text"></div>
+    
+    <!--    triple arrow animation  -->
+    <div class="container">
+        <div class="content">
+            <p>Hover me !</p>
+            <svg id="more-arrows">
+            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+            <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+<!--            <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>-->
+            </svg>
+        </div>
+    </div>
+    <!------------------------------------>
+</div>
+    
+
+    <div class="second-page"><h1></h1></div>
+    
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
     
 <!--all scripts in here-->
     <script src="pointer.js"></script>
@@ -89,9 +115,10 @@
     
         }
     </script>
-    <!--  typing text effect in js  -->
+    <!------------------------------------>
     
     
+    <!--  for animation of sticky navbar  -->
     <script>
     // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
     window.onscroll = function() {scrollFunction()};
@@ -106,6 +133,39 @@
       }
     }
     </script>
+    <!------------------------------------>
+
+    
+    <!--  cross browser solution for smooth scrolling  -->
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+    <!------------------------------------>
+
+    
 <!--all scripts in here-->
     
     
