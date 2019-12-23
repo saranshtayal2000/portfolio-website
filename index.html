@@ -44,8 +44,14 @@
     
     <div id="text"></div>
            
- <div class="container">         
-    </div>     
+    <div id="navbar">
+        <a href="#" id="logo">Logo</a>
+        <div id="navbar-right">
+            <a class="active" href="#home">HOME</a>
+            <a href="#contact">CONTACT</a>
+            <a href="about">ABOUT</a>
+        </div>
+    </div>    
     
 <!--all scripts in here-->
     <script src="pointer.js"></script>
@@ -85,6 +91,21 @@
     </script>
     <!--  typing text effect in js  -->
     
+    
+    <script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+    </script>
 <!--all scripts in here-->
     
     
