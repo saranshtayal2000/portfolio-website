@@ -1,6 +1,14 @@
 html{
     scroll-behavior: smooth;
 }
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+    z-index: -100;
+}
 #text{
     font-size: 5vw;
     color: white;
@@ -22,13 +30,13 @@ body{
 /*styling navbar*/
 #navbar{
     overflow: hidden;
-    background-color: 0A0A0A;
+    background-color: none;
     padding: 90px 10px;
     transition: 0.4s;
-    position: relative;
+    position: fixed;
     width: 100%;
     top:0;
-/*    z-index: 99;*/
+    z-index: 99;
 }
 #navbar a{
     float:left;
@@ -86,6 +94,7 @@ body{
 .second-page h1{
     color: white;
     font-size: 20px;
-    position: relative;
-    z-index: 200;
+/*    position: relative;*/
+    min-height: 100vh;
+
 }

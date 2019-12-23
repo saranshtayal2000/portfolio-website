@@ -1,8 +1,9 @@
-<!doctype.html>
+<!DOCTYPE html>
 <html>
 <head>
     
-    <title>Kshitiz Kamal</title> 
+    <title>Kshitiz Kamal</title>
+    <link rel="icon" type="image/png" href="#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -26,7 +27,7 @@
     
 </head>
     
-<body onload="typing()">
+<body onload="typer()">
     
     
     
@@ -58,6 +59,12 @@
         </div>
     </div>    
     
+    
+    <video autoplay muted loop id="myVideo">
+      <source src="./videobg.mp4" type="video/mp4">
+    </video>
+    
+    
       <div id="text"></div>
     
     <!--    triple arrow animation  -->
@@ -75,6 +82,7 @@
     
 
     <div class="second-page"><h1>this is the problem. how to get it below this page?</h1></div>
+    <div>shfslfj</div>
     
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
     
@@ -99,21 +107,44 @@
 
     
     <!--  typing text effect in js  -->
-    <script>
-        var i=0;
-        var text = "Hey, I  am  Kshitiz Kamal  !";
-        var speed=90;
-        function typing()
-        {
-            
-          if(i<text.length){
-              document.getElementById("text").innerHTML = text.slice(0,i+1)+" |";
-              i++;
-              setTimeout(typing,speed);
-          }  
-    
-        }
-    </script>
+    	<script>
+		var i=0
+		var text='Hey, I am Kshitiz Kamal!..'
+		var speed=130;
+		var speed_rev=50;
+		function typer()
+		{
+			
+			if(i<text.length){
+			document.getElementById("text").innerHTML=text.substring(0,i-1)+"|";
+			i++;
+			setTimeout(typer,speed);
+			}
+			else if(i==text.length)
+			{ for(var j=1;j<=100000000;j+=0.33);
+			i++;
+			setTimeout(typer,speed);
+			}
+			else
+			{
+			i-=2;
+				typer_rev();
+			}
+		}
+		function typer_rev()
+		{
+			
+			if(i>0 && i!=0){
+			document.getElementById("text").innerHTML=text.substring(0,i-1)+"|";
+			i--;
+			setTimeout(typer_rev,speed_rev);
+			}
+			else
+			{
+				typer();
+			}
+		}
+		</script>
     <!------------------------------------>
     
     
