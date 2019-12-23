@@ -1,5 +1,8 @@
+html{
+    scroll-behavior: smooth;
+}
 #text{
-    font-size: 70px;
+    font-size: 5vw;
     color: white;
     font-family: fantasy;
     text-align: center;
@@ -16,9 +19,10 @@ body{
 *{
     box-sizing: border-box;
 }
+/*styling navbar*/
 #navbar{
     overflow: hidden;
-    background-color: black;
+    background-color: 0A0A0A;
     padding: 90px 10px;
     transition: 0.4s;
     position: fixed;
@@ -64,4 +68,15 @@ body{
   #navbar-right {
     float: none;
   }
+}
+/*styling navbar*/
+#topButton{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    
 }
