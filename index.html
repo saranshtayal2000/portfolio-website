@@ -7,23 +7,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-<!--    including bs4-->
+    <!--    including bs4-->
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!------------------------------------>
-
-    
+    <!--libraries for parallax effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.min.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="csswebsite.css">
     <link rel="stylesheet" href="triple%20arrow.css">
     <link rel="stylesheet" href="pointer2.css">     <!-- To switch cursor styles, toggle between pointer.css and pointer2.css -->
     <link rel="stylesheet" href="scrollbar.css">
+    <script src="typing.js"></script>
     
 </head>
     
@@ -46,7 +50,7 @@
     <!------------------------------------>
 
     
-    
+<!--first page starts    -->
 <div class="first-page">
     
        
@@ -79,14 +83,50 @@
     </div>
     <!------------------------------------>
 </div>
-    
+<!--first page ends here  -->
 
-    <div class="second-page"><h1>this is the problem. how to get it below this page?</h1></div>
-    <div>shfslfj</div>
+    
+<!--second page starts-->
+    <div class="second-page">
+        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="./parallax-img.jpg">
+            
+        </div>
+    </div>
+<!--second page ends here-->
+    
+<!--    mid page ;-) -->
+    <div class="mid container-fluid"><p>Want more of me?</p></div>
+    
+<!--third page starts    -->
+    <div class="third-page container-fluid">
+        <h1>\ Projects /</h1>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+    </div>
+<!--third page ends -->
+    
+    
+    <div class="footer container-fluid">
+        <div class="row">
+            <div class="column">
+            <a href="#" class="fa fa-facebook-official"></a>
+            <a href="#" class="fa fa-twitter-square"></a>
+            <a href="#" class="fa fa-wordpress"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-google"></a>
+            </div>
+        </div>
+    </div>
+
     
     <button onclick="topFunction()" id="topButton" title="Go to top"></button>
     
-<!--all scripts in here-->
+    
+    <!--all scripts in here-->
     <script src="pointer.js"></script>
      
     
@@ -104,48 +144,6 @@
             
         })
     </script>
-
-    
-    <!--  typing text effect in js  -->
-    	<script>
-		var i=0
-		var text='Hey, I am Kshitiz Kamal!..'
-		var speed=130;
-		var speed_rev=50;
-		function typer()
-		{
-			
-			if(i<text.length){
-			document.getElementById("text").innerHTML=text.substring(0,i-1)+"|";
-			i++;
-			setTimeout(typer,speed);
-			}
-			else if(i==text.length)
-			{ for(var j=1;j<=100000000;j+=0.33);
-			i++;
-			setTimeout(typer,speed);
-			}
-			else
-			{
-			i-=2;
-				typer_rev();
-			}
-		}
-		function typer_rev()
-		{
-			
-			if(i>0 && i!=0){
-			document.getElementById("text").innerHTML=text.substring(0,i-1)+"|";
-			i--;
-			setTimeout(typer_rev,speed_rev);
-			}
-			else
-			{
-				typer();
-			}
-		}
-		</script>
-    <!------------------------------------>
     
     
     <!--  for animation of sticky navbar  -->
@@ -197,7 +195,6 @@
 
     
 <!--all scripts in here-->
-    
     
 </body>
 </html>

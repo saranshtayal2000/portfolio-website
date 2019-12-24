@@ -1,6 +1,10 @@
 html{
     scroll-behavior: smooth;
 }
+@font-face{
+    font-family:raleway;
+    src:url(raleway.bold.ttf);
+}
 #myVideo {
   position: absolute;
   right: 0;
@@ -12,7 +16,7 @@ html{
 #text{
     font-size: 5vw;
     color: white;
-    font-family: fantasy;
+    font-family: raleway;
     text-align: center;
     position: absolute;
     top:45%;
@@ -23,6 +27,16 @@ body{
     background-color: black; 
     cursor:none;
     margin: 0;
+}
+.footer{
+    background-color: #0A0A0A;
+    min-height: 30vh;
+}
+.footer .row a{
+    font-size: 3vh;
+    color: gray;
+    padding: 9px;
+    margin: 2px;
 }
 *{
     box-sizing: border-box;
@@ -91,10 +105,26 @@ body{
 .first-page{
     min-height: 100vh;
 }
-.second-page h1{
+.second-page{
     color: white;
     font-size: 20px;
 /*    position: relative;*/
     min-height: 100vh;
 
+}
+.parallax{
+    min-height: 100vh;
+    background: transparent;
+}
+.third-page{
+    min-height: 100vh;
+    background-color: #0A0A0A;
+}
+.mid p{
+    font-family:raleway;
+    color:white;
+    font-size: 5vw;
+    text-align: center;
+    min-height: 30vh;
+    padding: 5%;
 }
