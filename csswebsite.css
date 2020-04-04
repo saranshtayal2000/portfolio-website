@@ -117,15 +117,19 @@ body{
     background: transparent;
 }
 .third-page{
-    min-height: 100vh;
+    min-height: 80vh;
     background-color: #0A0A0A;
 }
-.third-page .heading{
+.heading{
     padding: 20px 0px 10vh;
     margin: auto;
     color: rgb(200,200,200);
     text-align: center;
 }
+.project-page{
+    min-height: 90vh;
+}
+
 
 .mid p{
     font-family:raleway;
