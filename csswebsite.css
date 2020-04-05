@@ -30,13 +30,18 @@ body{
 }
 .footer{
     background-color: black;
-    min-height: 30vh;
+    min-height: 18vh;
+    width=100%;
+    margin: auto;
 }
-.footer .row a{
+.footer .row .column a{
+    margin: auto;
+    width=50%;
     font-size: 3vh;
     color: gray;
     padding: 9px;
-    margin: 2px;
+    
+
 }
 *{
     box-sizing: border-box;
@@ -116,18 +121,18 @@ body{
     min-height: 100vh;
     background: transparent;
 }
-.third-page{
+.hobby-page{
     min-height: 80vh;
     background-color: #0A0A0A;
 }
 .heading{
-    padding: 20px 0px 10vh;
+    padding: 0px 0px 10vh;
     margin: auto;
     color: rgb(200,200,200);
     text-align: center;
 }
 .project-page{
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 
