@@ -6,6 +6,7 @@
     position:absolute;
     transition-duration:200ms;
     transition-timing-function:ease-out;
+    z-index: 100;
     
 }
 .inner{
@@ -15,6 +16,7 @@
     border:5px solid white;
     border-radius:50%;
     position:absolute;
+    z-index: 100;
 }
 
  

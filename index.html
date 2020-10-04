@@ -1,60 +1,236 @@
-<!doctype.html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>MY CSS WEBSITE</title> 
+    
+    <title>Kshitiz Kamal</title>
+    <link rel="icon" type="image/png" href="#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--    including bs4-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- aos sript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!------------------------------------>
+    <!--libraries for parallax effect-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.min.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="csswebsite.css">
-    <link rel="stylesheet" href="pointer2.css">
+    <link rel="stylesheet" href="triple%20arrow.css">
+    <link rel="stylesheet" href="pointer2.css">     <!-- To switch cursor styles, toggle between pointer.css and pointer2.css -->
     <link rel="stylesheet" href="scrollbar.css">
+    <script src="typing.js"></script>
+    
 </head>
     
-<body class="header" onload="typing()">
+<body onload="typer()">
     
-    <div class="cursor"></div>
+    
+    
+    <!-- necessary for pointer2.css-->
+    <!-- <div class="cursor"></div> -->
     <div class="inner"></div>
     <div class="stop"></div>
+    <!------------------------------------>
    
+    
+    <!-- necessary for pointer-->
     <div id="follower">
-  <div id="circle1"></div>
-  <div id="circle2"></div>
-</div>
+      <div id="circle1"></div>
+      <div id="circle2"></div>
+    </div>
+    <!------------------------------------>
+
     
-       <div id="particles-js">
+<!--first page starts    -->
+<div class="first-page">
     
-           <div id="text">hello</div>
-           <div class="light"></div>
-           
- <nav class="sticky">
-     <ul class="navbar" id="dropdownClick">
-         <li><a href="#home">home</a></li>
-         <li><a href="#news">news</a></li>
-         <li><a href="#contact">contact</a></li>
-         <li><a href="#aboutus">about us</a></li>
-         
-         <li class="navbar-right"><a href="#signup">sign up</a></li>
-         <li class="navbar-right"><a href="#signin">sign in</a></li>
-         <li class="dropdownicon" onclick="dropdownMenu"><a href="javascript:void(0);">&#9776;
-</a></li>
        
-         
+    <div id="navbar">
+        <a href="#" id="logo">Logo</a>
+        <div id="navbar-right">
+            <a class="active" href="#home">HOME</a>
+            <a href="#contact">CONTACT</a>
+            <a href="about">ABOUT</a>
+        </div>
+    </div>    
     
-     
-     
-     </ul>
-     </nav>
-           </div> 
+    
+    <video autoplay muted loop id="myVideo">
+      <source src="./assets/videobg.mp4" type="video/mp4">
+    </video>
+    
+    
+      <div id="text"></div>
+    
+    <!--    triple arrow animation  -->
+    <div class="container">
+        <div class="content">
+            <svg id="more-arrows">
+            <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "/>
+            <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "/>
+<!--            <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "/>-->
+            </svg>
+        </div>
+    </div>
+    <!------------------------------------>
+</div>
+<!--first page ends here  -->
+
+    
+<!--second page starts-->
+    <div class="second-page">
+        <div class="parallax" data-parallax="scroll" data-z-index="1" data-image-src="./assets/parallax-img.jpg">
+            
+        </div>
+    </div>
+<!--second page ends here-->
+    
+<!--    mid page ;-) -->
+    <div class="mid container-fluid"><p>Want more of me?</p></div>
+
+<!--project page starts    -->
+    <div class="project-page container-fluid">
+      <h1 class="heading" title="Explore my projects!">\ Projects /</h1>
+      <div class="row" >
+          <div  class="column card">
+            <img src="./assets/jarvis.jpg" alt="jarvis" style="width:100%">
+            <h1>J.A.R.V.I.S</h1>
+            <p>Iron Man inspired<br> personal virtual assistant</p>
+              <p><a href="https://kkshitiz.github.io/J.A.R.V.I.S/" target="_blank"><button>Visit</button></a></p>
+          </div>
+         <div class="column card">
+            <img src="./assets/coronascraper.jpg" alt="Corona-scraper" style="width:100%">
+            <h1>Corona-Scraper</h1>
+            <p>Live monitoring tool useful for vigilants<br> and medical staffs</p>
+              <p><a href="https://kkshitiz.github.io/Corona-Scraper/" target="_blank"><button>Visit</button></a></p>
+          </div>
+          
+          <div class="column card">
+            <img src="./assets/serialclicker.jpg" alt="serialclicker" style="width:100%">
+            <h1>Serial-Clicker</h1>
+            <p>An autoclicker program for some<br> serious fun purpose
+            </p>
+              <p><a href="https://kkshitiz.github.io/Serial-clicker/" target="_blank"><button>Visit</button></a></p>
+          </div>
+      </div>
+  </div>
+  <div class="project-page container-fluid">
+    <div class="row">
+      <div class="column card">
+        <img src="./assets/acadstud.jpg" alt="actroid" style="width:100%">
+        <h1>Actroid2.0</h1>
+        <p>Animatronic face</p>
+          <p><a href="https://basanti-theactroid.github.io/" target="_blank"><button>Visit</button></a></p>
+      </div>
+      <div class="column card">
+        <img src="./assets/acadstud.jpg" alt="passman" style="width:100%">
+        <h1>Pass-Man</h1>
+        <p>An easy to use password manager with<br> in-built password generator
+        </p>
+          <p><a href="https://kkshitiz.github.io/Pass-Man/" target="_blank"><button>Visit</button></a></p>
+      </div>
+      <div class="column card">
+        <img src="./assets/mscalculator.jpg" alt="mscalculator" style="width:100%">
+        <h1>MS Calculator</h1>
+        <p>An exact replica of the Calculator GUI which comes bundled with MS Win10
+        </p>
+          <p><a href="https://kkshitiz.github.io/MS-Calculator-gui/" target="_blank"><button>Visit</button></a></p>
+      </div>
+    </div>
+  </div>
+<!--project page ends -->
+
+
+<!--hobby page starts    -->
+    <div class="hobby-page container-fluid">
+        <h1 class="heading" title="Explore my hobbies!">\ My Hobbies /</h1>
+        <div class="row">
+            <div class="column card">
+              <img src="./assets/acadstud.jpg" alt="AcademicStud" style="width:100%">
+              <h1>Academic Stud</h1>
+              <p>My personal blog</p>
+                <p><a href="https://www.academicstud.wordpress.com"><button>Visit</button></a></p>
+            </div>
+           <div class="column card">
+              <img src="./assets/chemstud.JPG" alt="Chemistry Stud" style="width:100%">
+              <h1>Chemistry Stud</h1>
+              <p>Instagram page about Chemistry</p>
+                <p><a href="https://www.instagram.com/chemistry.stud/"><button>Visit</button></a></p>
+            </div>
+            
+            <div class="column card">
+              <img src="./assets/youtube.jpg" alt="Youtube" style="width:100%">
+              <h1>Youtube channel</h1>
+              <p>Coming soon!</p>
+                <p><a href="https://youtube.com"><button>Visit</button></a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hobby-page container-fluid">
+      <!-- <h1 class="heading" title="Explore my hobbies!">\ My Hobbies /</h1> -->
+      <div class="row">
+          <div class="column card">
+            <img src="./assets/competitive.jpg" alt="competitivecoding" style="width:100%">
+            <h1>Competitive Programming</h1>
+            <p>Click below to see my profile</p>
+              <p><a href="https://www.stopstalk.com/user/profile/skilite007" target="_blank"><button>Visit</button></a></p>
+          </div>
+         <div class="column card">
+            <img src="./assets/robotics.jpg" alt="Robotics" style="width:100%">
+            <h1>Robotics</h1>
+            <p>Core Team member of ZINE Robotics<br>and Research Team</p>
+              <p><a href="http://zine.co.in/" target="_blank"><button>Visit</button></a></p>
+          </div>
+          
+          <div class="column card">
+            <img src="./assets/youtube.jpg" alt="Investing" style="width:100%">
+            <h1>Investing</h1>
+            <p>A novice<br>just starting out</p>
+              <p><a href="https://youtube.com" target="_blank"><button>Visit</button></a></p>
+          </div>
+      </div>
+  </div>
+<!--hobby page ends -->
+
 
     
     
+    <div class="footer container-fluid">
+        <div class="row">
+            <div class="column">
+            <a href="#" class="fa fa-facebook-official"></a>
+            <a href="#" class="fa fa-twitter-square"></a>
+            <a href="#" class="fa fa-wordpress"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-github"></a>
+            <a href="#" class="fa fa-google"></a>
+            </div>
+        </div>
+    </div>
+
+    
+    <button onclick="topFunction()" id="topButton" title="Go to top"></button>
     
     
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+    <!--all scripts in here-->
     <script src="pointer.js"></script>
      
     
-    
-    
+
     <script>
     const cursor=document.querySelector('.cursor');
         document.addEventListener('mousemove',e =>{
@@ -68,53 +244,58 @@
             
             
         })
-    
-    
-    
-    
     </script>
-<!--    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
     
+    
+    <!--  for animation of sticky navbar  -->
     <script>
-         var i=0;
-            var text = "Hey, I  am  anonymous  !";
-            var speed=80;
-    function typing()
-        {
-            
-          if(i<text.length){
-              document.getElementById("text").innerHTML = text.slice(0,i+1)+" |";
-              i++;
-              setTimeout(typing,speed);
-          }  
-    
-        }
-        </script>
-<!--
-   <script type="text/javascript">
-       $(document).mousemove(function(e){
-           var X = e.pageX;
-           var Y = e.pageY;
-           $('.light').css('background','radial-gradient(circle at '+X+ 'px '+Y+'px,transparent,#000 10%)');
-       })
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
     </script>
--->
+    <!------------------------------------>
+
     
+    <!--  cross browser solution for smooth scrolling  -->
+    <!-- <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script> -->
+    <!------------------------------------>
+
     
-    
-    
-    
-    
-   <img src="logo.png">
-    
-    
-   
-    
+<!--all scripts in here-->
     
 </body>
-
-
-
-
-
 </html>
